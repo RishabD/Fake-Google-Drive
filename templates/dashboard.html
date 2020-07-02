@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Dashboard
+    </title>
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='Gdrive.png')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+  </head>
+
+  <body>
+
+    <div class = "header">
+        <a  class = "title"href = "{{url_for('index')}}">
+            Pseudo Google Drive
+        </a>
+        <div id = "logout">
+            <p style = "margin:0;padding-top:10px;">Logout</p>
+        </div>
+    </div>
+
+
+    <div class="search-container">
+      <input type="text" class = "inputs" id = "search-bar" name = "search-bar" placeholder="Search for files/folders here">
+      <form style="display:contents;" id="submitForm" enctype="multipart/form-data" action="/upload" method="post">
+
+      <label class="upload">
+      <input id = "file" name = "file" type="file" />
+        Upload File
+      </label>
+
+    </div>
+
+<div id="search_results">
+
+</div>
+
+
+  </body>
+</html>
+<script type="text/javascript">
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src = "{{url_for('static',filename="dashboard.js")}}"></script>

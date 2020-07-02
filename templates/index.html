@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='Gdrive.png')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+
+</head>
+<body>
+
+
+    <div id = 'overlay'></div>
+
+
+    <div id = "pop-up">
+      <div class = 'top-row'>
+        <div id = "message"></div>
+        <img id = "x-button" src="{{url_for('static',filename= "x-button.png")}}" alt="Exit"/>
+      </div>
+
+
+      <div class="SignIn">
+        <form id = "SignIn"  method="post">
+
+          <p class = "label">Sign In</p>
+          <img src="https://img.icons8.com/ios-filled/100/000000/login-rounded-down.png"/>
+          <p>
+              <input class = "inputs" type="text" placeholder="Enter Username" name="username" required>
+          </p>
+
+          <p>
+            <input class = "inputs" type="password" placeholder="Enter Password" name="password" required>
+          </p>
+          <p>
+            <button name="form1" value="default" class = "inputs" id= "SignIn-submit" type="submit">Login</button>
+          </p>
+
+        </form>
+      </div>
+
+
+      <div class="Create">
+      </div>
+
+    </div>
+
+
+    <div class = "header">
+        <a  class = "title"href = "{{url_for('index')}}">
+            Pseudo Google Drive
+        </a>
+        <div id = "login">
+            <p style = "margin:0;padding-top:10px;">Login</p>
+        </div>
+    </div>
+
+
+    <img id = "background" src="{{url_for('static', filename = 'background.jpg')}}">
+
+
+</body>
+</html>
+<script type="text/javascript">
+   var failed_attempt = {{failed_attempt}}
+   var logged_in = {{logged_in}}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src = "{{url_for('static',filename="login.js")}}"></script>

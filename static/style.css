@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+body
+{
+    margin:0;
+}
+
+.header
+{
+    height:120px;
+    width:100%;
+    background-color:#0099ff;
+}
+.title
+{
+    margin-top:20px;
+    margin-left: 20px;
+    font-family: 'Piedra', cursive;
+    float:left;
+    font-size:50px;
+    text-decoration:none;
+    color:black;
+}
+#login
+{
+    float:right;
+    height:100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size:50px;
+    font-family: 'Sriracha', cursive;
+}
+#login:hover
+{
+  background-color: black;
+  color:white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#pop-up
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height:60%;
+  width:960px;
+  background-color:#e5e5e5;
+  border-radius: 30px;
+}
+#background
+{
+  width: 100%;
+}
+#overlay
+{
+  width : 100%;
+  height : 100%;
+  background : #000;
+  position : fixed;
+  top : 0;
+  left : 0;
+  opacity:0.5;
+}
+.top-row
+{
+  height:10%;
+  color:black;
+  font-family: 'Roboto Mono', monospace;
+  font-size:20px;
+  text-align: center;
+}
+#x-button
+{
+  float:right;
+  margin-right:10px;
+  margin-top:10px;
+  height:80%;
+  filter: invert(40%);
+}
+#x-button:hover
+{
+  filter: invert(0%);
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+.SignIn
+{
+  width:50%;
+  height:90%;
+  float:left;
+  text-align:center;
+}
+.Create
+{
+  width:50%;
+  height:90%;
+  float:right
+}
+#logout
+{
+    float:right;
+    height:100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size:50px;
+    font-family: 'Sriracha', cursive;
+}
+#logout:hover
+{
+  background-color: black;
+  color:white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.inputs
+{
+  font-size:20px;
+  width:50%;
+  height:50px;
+  border-style:none;
+  background-color: white;
+  color:black;
+}
+.label
+{
+  text-align:center;
+  font-family: 'Roboto Mono', monospace;
+  font-size:30px;
+}
+.search-container
+{
+  width:100%;
+  height: 60px;
+  padding-top:10px;
+  background-color:#e5e5e5;
+  text-align: center;
+}
+input[type="file"] {
+    display: none;
+}
+.upload {
+    border: none;
+    display: inline-block;
+    float:right;
+    background-color:white;
+    width:10%;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-top:10px;
+    margin-right:15px;
+}
+.tile
+{
+  height:300px;
+  width:23%;
+  margin:1%;
+  background-color:#4a4b54;
+  border-radius: 25px;
+  float: left;
+  text-align: center;
+}
+.bar
+{
+  padding-top: 8px;
+  height: 50px;
+  text-align:center;
+}
+.tile_img
+{
+  height:200px;
+}
+.tile_content
+{
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+}
